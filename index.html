@@ -3,59 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>websitemaker6000's unblocked</title>
+  <title>websitemaker6000's ported games</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+    html, body {
       margin: 0;
       padding: 0;
-      text-align: center;
+      background-color: transparent;
+      color: orange;
+      font-family: sans-serif;
     }
-    header {
-      background: #333;
-      color: white;
-      padding: 2rem 0;
-    }
-    h1 {
-      margin: 0;
-    }
-    .intro {
-      margin: 2rem auto;
-      max-width: 600px;
-      font-size: 1.2rem;
-      color: #555;
-    }
-    .button-list {
+
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
-      margin-bottom: 3rem;
+      justify-content: center;
+      height: 100vh;
+      overflow: visible;
     }
-    .button-list a {
-      text-decoration: none;
-      background: #007acc;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 5px;
-      transition: background 0.3s ease;
+
+    .quote {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      text-align: center;
     }
-    .button-list a:hover {
-      background: #7a0074;
+
+    .launch-btn {
+      padding: 12px 24px;
+      font-size: 1.1em;
+      color: black;
+      border: 3px solid black;
+      border-radius: 15px;
+      cursor: pointer;
+      background: linear-gradient(270deg, #ebb434, #003cd4, #005eff, #ff5500);
+      background-size: 800% 800%;
+      animation: gradientShift 6s ease infinite;
+      box-shadow: 0 0 15px #ff5500, 0 0 25px #003cd4;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 20px;
+    }
+
+    .launch-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #b266ff, 0 0 35px #a64dff, 0 0 45px #cc80ff;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>websitemaker6000's unblocked</h1>
-  </header>
-  <div class="intro">
-    <p>Explore My Games Below</p>
+
+  <div class="container">
+    <div class="quote">Welcome to My GitHub Page</div>
+
+    <button class="launch-btn" onclick="location.href='Hollow%20Knight.html'">Hollow Knight</button>
+    <button class="launch-btn" onclick="location.href='about.html'">ABOUT ME</button>
+    <button class="launch-btn" onclick="location.href='contact.html'">CONTACT</button>
+    <button class="launch-btn" onclick="location.href='https://github.com/yourusername'">GITHUB PROFILE</button>
+    <button class="launch-btn" onclick="window.open('https://sites.google.com/view/saturna-one', 'popupWindow', 'width=600,height=400,scrollbars=yes,resizable=yes')">LAUNCH SATURNA</button>
   </div>
-  <div class="button-list">
-    <a href="https://toallgoodnight-lang.github.io/wsm6k-retro-games/Hollow%20Knight.html">Hollow Knight</a>
-    <a href="a">jhjjnnjnj</a>
-  </div>
+
 </body>
 </html>
